@@ -11,14 +11,14 @@ info = {
 
 info["surname"] = "bhartiy"
 
- print(info["name"])   #print specific key
+print(info["name"])   #print specific key
 info["name"] = "vikrant"  #for overwrite.
 
 print(info) 
 
 #nested dictionary -> dictionary inside the dictionary
 
-student = {
+student =  {
  "name" : "Vikrant Patel",
  "subjects" : {
   "phy" : 97,
@@ -49,3 +49,11 @@ print(student.items())# it returns all items of dictionary.
 print(list(student.items())) # it gives list like this [('name', 'Vikrant Patel'), ('subjects', {'phy': 97, 'chem': 98, 'math': 99})]   
 pairs = (list(student.items()))
 print(pairs[0]) # can specific part of list.
+
+print(student["name"])  #print name  but-> in case of error code after this will not run
+print(student.get("name")) # same as above print name  ->but in case or error it will run remainig code 
+
+print(before)
+
+
+print(after)
