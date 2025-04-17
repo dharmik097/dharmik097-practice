@@ -19,12 +19,12 @@ print(info)
 #nested dictionary -> dictionary inside the dictionary
 
 student =  {
- "name" : "Vikrant Patel",
- "subjects" : {
-  "phy" : 97,
-  "chem" : 98, 
-  "math" : 99
- } 
+"name" : "Vikrant Patel",
+"subjects" : {
+"phy" : 97,
+"chem" : 98, 
+"math" : 99
+} 
 }
 
 
@@ -53,7 +53,17 @@ print(pairs[0]) # can specific part of list.
 print(student["name"])  #print name  but-> in case of error code after this will not run
 print(student.get("name")) # same as above print name  ->but in case or error it will run remainig code 
 
-print(before)
+
+print("before")
+print(student["name1"]) #if some issue here it will show error beaus of wrong name here and will not run remaining code
+print("after")
 
 
-print(after)
+print("before")
+print(student.get("name2"))  #it will run whole code except this line because of error of name only
+print("after")
+
+# output
+#before
+# None
+# after
