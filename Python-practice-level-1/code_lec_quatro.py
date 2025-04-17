@@ -67,3 +67,12 @@ print("after")
 #before
 # None
 # after
+ 
+
+student.update({"city" : "porto"}) #update dictionary add key with value
+student.update({"city" : "porto", "age" : "17"}) # same as above but just add multiple keys with values
+student.update({"name" : "Vikramaditya"}) # if put existing keys with new value it will mot add new key it will just change value of existing key.
+# no duplicate keys allowed in dictionary.
+
+
+
