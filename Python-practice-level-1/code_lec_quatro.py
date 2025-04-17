@@ -74,5 +74,25 @@ student.update({"city" : "porto", "age" : "17"}) # same as above but just add mu
 student.update({"name" : "Vikramaditya"}) # if put existing keys with new value it will mot add new key it will just change value of existing key.
 # no duplicate keys allowed in dictionary.
 
+---------------------------------------------------------------------------------
+
+#set
+collection = {1,2,2,2,3,4,5, "Hello", "World" }
+print(collection)
+print(type(collection))  
+
+# in set can be added Duplicate values but will be ignored in output, output will be unordered,  
+# set is mutable but values of set are immutable.
+
+collection = set()  # this is empty set not {} this
+collection = set()
+collection.add(1)
+collection.add(2)
+collection.add(2)
+collection.remove(1)
 
 
+print(collection)
+print(len(collection))  
+# output {2}
+# 1
