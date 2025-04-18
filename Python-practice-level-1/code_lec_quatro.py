@@ -99,3 +99,15 @@ print(len(collection))
 
 collection = {"hello", "jay", "hind","vande","mataram"}
 print(collection.pop()) # it will pop any random value from set
+
+set1 = {1,2,3}
+set2 = {2,3,4}
+
+print(set1.union(set2)) #op. {1, 2, 3, 4}
+print(set1.intersection(set2)) #op {2, 3}
+
+-------------------------------------------------------------------------------------------
+
+#practice
+
+ 
