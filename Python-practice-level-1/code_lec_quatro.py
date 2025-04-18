@@ -109,5 +109,13 @@ print(set1.intersection(set2)) #op {2, 3}
 -------------------------------------------------------------------------------------------
 
 #practice
+my_dics = {
+    "table" : ["a peace of furniture", "list of facts & figures"], 
+    "cat" : "a small animal",
 
+}
+print(my_dics)
  
+
+sub_list = {"python","java","C++","python","javascript","java","python", "java", "C++", "c"}
+print(len(sub_list))
