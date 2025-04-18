@@ -1,4 +1,3 @@
 
-collection = {1,2,3,4,5 }
-print(collection)
-print(type(collection))
+collection = {"hello", "jay", "hind","vande","mataram"}
+print(collection.pop())

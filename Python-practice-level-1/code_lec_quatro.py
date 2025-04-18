@@ -97,3 +97,5 @@ print(len(collection))
 # output {2}
 # 1
 
+collection = {"hello", "jay", "hind","vande","mataram"}
+print(collection.pop()) # it will pop any random value from set
