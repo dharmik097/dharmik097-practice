@@ -76,7 +76,7 @@ student.update({"city" : "porto", "age" : "17"}) # same as above but just add mu
 student.update({"name" : "Vikramaditya"}) # if put existing keys with new value it will mot add new key it will just change value of existing key.
 # no duplicate keys allowed in dictionary.
 
----------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------
 
 #set
 collection = {1,2,2,2,3,4,5, "Hello", "World" }
@@ -108,7 +108,7 @@ set2 = {2,3,4}
 print(set1.union(set2)) #op. {1, 2, 3, 4}
 print(set1.intersection(set2)) #op {2, 3}
 
--------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------
 
 #practice
 
@@ -119,12 +119,12 @@ my_dics = {
 }
 print(my_dics)
  
----------
+# ---------
 
 sub_list = {"python","java","C++","python","javascript","java","python", "java", "C++", "c"}
 print(len(sub_list))
 
----------
+# ---------
 
 marks = {}
 
@@ -143,4 +143,12 @@ marks.update({"eng" : x })
 
 print(marks)
 
---------------------
+# --------------------
+
+values = {
+    ("float", 9.0),("int",9),
+}
+
+print(values)
+
+# ----------------
