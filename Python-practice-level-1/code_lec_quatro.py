@@ -53,6 +53,8 @@ print(pairs[0]) # can specific part of list.
 print(student["name"])  #print name  but-> in case of error code after this will not run
 print(student.get("name")) # same as above print name  ->but in case or error it will run remainig code 
 
+student.update({"city" : "Delhi"}) # update info of dictionary
+
 
 print("before")
 print(student["name1"]) #if some issue here it will show error beaus of wrong name here and will not run remaining code
@@ -109,6 +111,7 @@ print(set1.intersection(set2)) #op {2, 3}
 -------------------------------------------------------------------------------------------
 
 #practice
+
 my_dics = {
     "table" : ["a peace of furniture", "list of facts & figures"], 
     "cat" : "a small animal",
@@ -116,6 +119,28 @@ my_dics = {
 }
 print(my_dics)
  
+---------
 
 sub_list = {"python","java","C++","python","javascript","java","python", "java", "C++", "c"}
 print(len(sub_list))
+
+---------
+
+marks = {}
+
+x = int(input("enter phy : "))
+marks.update({"phy" : x })
+
+
+x = int(input("enter phy : "))
+marks.update({"math" : x })
+
+x = int(input("enter phy : "))
+marks.update({"chem" : x })
+
+x = int(input("enter phy : "))
+marks.update({"eng" : x })
+
+print(marks)
+
+--------------------
