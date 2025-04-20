@@ -2,6 +2,6 @@
 #2 types while and for
  
 count = 1
-while count <= 7 :
+while count <= 100 :
     print("hello")
-    count += 1
+    count += 2
