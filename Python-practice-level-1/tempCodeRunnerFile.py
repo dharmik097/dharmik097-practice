@@ -1,3 +1,4 @@
-
-collection = {"hello", "jay", "hind","vande","mataram"}
-print(collection.pop())
+count = 1
+while count <= 5 :
+    print("hello")
+    count += 1
