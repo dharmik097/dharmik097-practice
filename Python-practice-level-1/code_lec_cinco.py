@@ -33,3 +33,18 @@ i = 100
 while i >= 1:
     print(i)
     i -= 1
+
+#print multiplication table of number n
+i = 1
+n = int(input("put your value :"))
+while i <= 10:
+    print(n*i)
+    i += 1
+
+
+#print squre of the numbers
+
+i = 1
+while i <= 10:
+    print(i*i)
+    i += 1 
