@@ -18,3 +18,18 @@ i = 5
 while i >= 1:
     print(i)
     i -= 1
+#PRACTICE
+
+#PRINT NUMBER FROM 1 TO 100
+ 
+i = 1
+while i <= 100:
+    print(i)
+    i += 1
+
+#print number 100 to 1
+
+i = 100
+while i >= 1:
+    print(i)
+    i -= 1
