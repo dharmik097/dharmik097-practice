@@ -80,6 +80,69 @@ while i < len(nums):
         print("finding..")
     i += 1    
 
+# uses of break and continue in loops.
+i = 1 
+while i <= 5:
+    print(i)
+    if(i == 3):
+        break # it stops loop
+    i += 1
+print("end of loop")   
+
+# ex2  SEE DIFFERENCE BETWEEN BOTH EXAMPLES
+nums = (1,2,4,9,16,25,36,49,64,81,100,36,10,15,36,57,85,36)
+x =36
+i = 0
+while i < len(nums):
+    if(nums[i] == x):
+        print(x,"found at index",i)
+        break
+    else:
+        print("finding..")
+    i += 1    
+
+
+# use of CONTINUE
+
+i = 0
+while i <= 5:
+    if (i == 3):
+        i += 1
+        continue
+    print(i)
+    i += 1
+
+i = 0
+while i <= 10:
+    if (i%2 == 0):
+        i += 1
+        continue
+    print(i)
+    i += 1
+
+# op 
+1
+3
+5
+7
+9
+
+i = 0
+while i <= 10:
+    if (i%2 != 0):
+        i += 1
+        continue
+    print(i)
+    i += 1
+
+# op 
+0
+2
+4
+6
+8
+10
+ 
 
 
               
