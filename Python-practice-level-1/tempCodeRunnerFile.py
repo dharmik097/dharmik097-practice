@@ -1,6 +1,6 @@
-squres = [2,4,9,16,25,36,49,64,81,100]
 
+heros = ["Dharam","Ironman","Thor"]
 idx = 0
-while idx < len(squres):
-    print(squres[idx])
+while idx < len(heros):
+    print(heros[idx])
     idx += 1

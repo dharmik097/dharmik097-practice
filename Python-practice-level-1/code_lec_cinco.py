@@ -57,3 +57,12 @@ idx = 0
 while idx < len(squres):
     print(squres[idx])
     idx += 1
+
+
+# ex-2
+
+heros = ["Dharam","Ironman","Thor"]
+idx = 0
+while idx < len(heros):
+    print(heros[idx])
+    idx += 1
