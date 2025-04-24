@@ -200,6 +200,16 @@ for nums in squares:
         print( "found at idx", idx )
         break
     idx += 1
+    
+
+# range()
+
+seq = range(5)
+''
+for i in seq:
+    print(i)
+  
+
 
 
 
