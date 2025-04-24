@@ -1,5 +1,3 @@
 
-seq = range(5)
-''
-for i in seq:
+for i in range (100,0,-1):
     print(i)

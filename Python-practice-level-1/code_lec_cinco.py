@@ -204,13 +204,30 @@ for nums in squares:
 
 # range()
 
-seq = range(5)
-''
+seq = range(10) # range(stop)
+
 for i in seq:
     print(i)
+
+#ex-2
+for i in range(2,10):  #range(start, stop)
+    print(i)
+
+#ex-3
+
+for i in range(2, 100, 2):  #range(start,stop,difference)
+    print(i)
   
+# prac-1
+#print 1to 100
 
+for i in range (1,101,1):
+    print(i)
 
+# print number 100 to 1
+
+for i in range (100,0,-1):
+    print(i)
 
 
 
