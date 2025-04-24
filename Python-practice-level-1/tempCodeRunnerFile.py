@@ -1,3 +1,3 @@
-
-for i in range (100,0,-1):
+n = int(input("table of number: "))
+for i in range(n,(11*n),n ):
     print(i)

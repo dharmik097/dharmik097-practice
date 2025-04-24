@@ -229,6 +229,11 @@ for i in range (1,101,1):
 for i in range (100,0,-1):
     print(i)
 
+# print multiplication table of n  
+# my soln 
+n = int(input("table of number: "))
+for i in range(n,(11*n),n ):
+    print(i)
 
 
 
