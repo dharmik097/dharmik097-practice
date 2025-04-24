@@ -161,12 +161,33 @@ for num in tup:
     print(num)
  
  #exe 3
+
 str = "Jay Hind"
 
 for char in str:
     print(char)
 else:
     print("End")    
+
+#ex-4
+
+str = "Jay Hind"
+
+for char in str:
+    if(char == "o"):
+        print("o found")
+        break
+    print(char)
+else:
+    print("End")   
+
+
+#MORE PRACTICE QNS
+
+squres = [1,4,9,16,25,36,49,64,81,100]
+
+for nums in squres:
+    print(nums)
 
 
               

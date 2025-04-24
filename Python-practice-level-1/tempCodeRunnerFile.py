@@ -1,7 +1,5 @@
 
-str = "Jay Hind"
+squres = [1,4,9,16,25,36,49,64,81,100]
 
-for char in str:
-    print(char)
-else:
-    print("End")
+for nums in squres:
+    print(nums)
