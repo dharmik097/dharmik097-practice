@@ -230,14 +230,46 @@ for i in range (100,0,-1):
     print(i)
 
 # print multiplication table of n  
-# my soln 
+    # my soln 
 n = int(input("table of number: "))
 for i in range(n,(11*n),n ):
     print(i)
 
+    #more simple soln
+n = int(input("table of number: "))
+for i in range(1,11):
+    print(i*n)
+
+#pass statement
+
+#pass in a null statement that does nothing. It is used as placeholder for future code.
+# exe
+for i in range(5):
+    pass # here we just dont want to execute this loop and move ahead. if will not use this code will not run ahead from this point. 
+if i > 5:
+    pass
+ print("code check") # run this code by removing pass it will not run
+
+#========================================
+#========================================
+
+#practice of loops
+   # 1. WAP to find sum of first n numbers. (using while)
+# meathod 1
+n = int(input("sum of first n numbers where n ="))
+sum = 0
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+print("total sum =", sum)
+# meathod 2
+
+n = int(input("sum of first n numbers where n ="))
+sum = 0
+for i in range(1,n+1):
+    sum += i
+print("total sum =", sum)
 
 
-
-
-              
 
