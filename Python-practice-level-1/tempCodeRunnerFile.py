@@ -1,7 +1,5 @@
-i = 0
-while i <= 10:
-    if (i%2 != 0):
-        i += 1
-        continue
-    print(i)
-    i += 1
+tup = (1,2,3,4,5,6,7,8,9)
+
+for num in tup:
+    print(num)
+ 
