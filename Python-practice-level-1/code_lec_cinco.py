@@ -144,6 +144,30 @@ while i <= 10:
 10
  
 
+ --------------------------------------------------
+
+# for loop
+
+nums = [1, 2, 3, 4, 5]
+
+for val in nums:
+    print(val)
+
+#ex2
+
+tup = (1,2,3,4,5,6,7,8,9)
+
+for num in tup:
+    print(num)
+ 
+ #exe 3
+str = "Jay Hind"
+
+for char in str:
+    print(char)
+else:
+    print("End")    
+
 
               
 
