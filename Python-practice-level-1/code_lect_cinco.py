@@ -242,7 +242,7 @@ for i in range(1,11):
 
 #pass statement
 
-#pass in a null statement that does nothing. It is used as placeholder for future code.
+#pass in a null statement that does nothing. It is used as placeholder for future code..
 # exe
 for i in range(5):
     pass # here we just dont want to execute this loop and move ahead. if will not use this code will not run ahead from this point. 

@@ -12,11 +12,11 @@ info = {
 info["surname"] = "bhartiy"
 
 print(info["name"])   #print specific key
-info["name"] = "vikrant"  #for overwrite.
+info["name"] = "vikrant"  #for overwrite..
 
 print(info) 
 
-#nested dictionary -> dictionary inside the dictionary
+#nested dictionary -> dictionary inside the dictionary.
 
 student =  {
 "name" : "Vikrant Patel",
