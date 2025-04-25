@@ -72,7 +72,7 @@ elif ( D > B and D > A and D > C):
 print("greatest number is :",ans)
 # ________________________________________________________________________________
 
-# num is multple of 7 or not
+# num is multple of 7 or not.
 
 num = int(input("enter number:"))
 rem = num % 7
