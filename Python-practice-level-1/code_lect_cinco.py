@@ -144,7 +144,7 @@ while i <= 10:
 10
  
 
- --------------------------------------------------
+#--------------------------------------------------
 
 # for loop
 
@@ -248,7 +248,7 @@ for i in range(5):
     pass # here we just dont want to execute this loop and move ahead. if will not use this code will not run ahead from this point. 
 if i > 5:
     pass
- print("code check") # run this code by removing pass it will not run
+print("code check") # run this code by removing pass it will not run
 
 #========================================
 #========================================
