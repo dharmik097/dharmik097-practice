@@ -48,13 +48,13 @@ calc_prod(3,4) # 3 and 4 are arguments.
 cities = ["Delhi", "Mumbai", "Bangalore", "Chennai"]
 heroes = ["Dharam", "Karana", "Arjun", "ironman", "thor"]   
 
-# def print_Len(list): #list is the parameter.
-#     length = len(list) #len is a built-in function to find the length of the list.
-#     print("The length of the list is :", length)
-#     return length
+def print_Len(list): #list is the parameter.
+    length = len(list) #len is a built-in function to find the length of the list.
+    print("The length of the list is :", length)
+    return length
 
-# print_Len(cities) #cities is the argument.
-# print_Len(heroes) #heroes is the argument.
+print_Len(cities) #cities is the argument.
+print_Len(heroes) #heroes is the argument.
 
 #WAFto print the elements of the list in a single line(list is the parameter).
 def print_list(list): #list is the parameter.
