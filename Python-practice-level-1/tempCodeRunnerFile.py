@@ -1,6 +1,7 @@
-def conv(usd_value):
-    inr_value = usd_value * 83
-    print("The value of", usd_value, "usd in inr is :", inr_value) #usd_value is the argument.
-    return inr_value
+def show(n): #n is the parameter.
+    if (n == 0): #base case
+        return
+    print(n) #n is the argument.
+    show(n-1) #recursive call
 
-conv(100) 
+show(5) #5 is the argument.

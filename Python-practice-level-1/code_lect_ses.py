@@ -67,6 +67,7 @@ def print_list(list): #list is the parameter.
 print_list(cities) #cities is the argument.     
 print_list(heroes) #heroes is the argument.  
 
+
 # WAF to find the factorial of n (n is the parameter).
 
 def calc_factorial(n): #n is the parameter.
@@ -87,3 +88,19 @@ def conv(usd_value):
     return inr_value
 
 conv(100) 
+
+# recursion
+# A function that calls itself is called a recursive function.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+# prints n  to 1 backwareds.
+# WAF to print n to 1 backwards (n is the parameter).
+def show(n): #n is the parameter.
+    if (n == 0): #base case
+        return
+    print(n) #n is the argument.
+    show(n-1) #recursive call
+
+show(5) #5 is the argument.
+
+#call stack
+# A call stack is a data structure that stores information about the active subroutines of a computer program. 
