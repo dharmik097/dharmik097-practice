@@ -102,5 +102,37 @@ def show(n): #n is the parameter.
 
 show(5) #5 is the argument.
 
-#call stack
+# ex-2
+# WAF to find the factorial of n (n is the parameter).
+def calc_factorial(n): #n is the parameter.
+    if (n == 0): #base case
+        return 1
+    else:
+        return n * calc_factorial(n-1) #recursive call
+print("The factorial of", 5, "is :", calc_factorial(5)) #5 is the argument.
+print("The factorial of", 6, "is :", calc_factorial(6)) #6 is the argument.    
+
+
+#practice
+# WAF to find the sum of n natural numbers (n is the parameter).
+def sum_n(n): # n is the parameter.
+    if (n == 0): #base case
+        return 0
+    else:
+        return n + sum_n(n-1) #recursive call
+print("The sum of", 5, "natural numbers is :", sum_n(5)) #5 is the argument.
+
+# write a recursive function to print all elements in the list and use list and index as parameters.
+
+cities = ["Delhi", "Mumbai", "Bangalore", "Chennai"]
+heroes = ["Dharam", "Karana", "Arjun", "ironman", "thor"]   
+def print_list(list, index): #list and index are the parameters.
+    if (index == len(list)): #base case
+        return
+    print(list[index]) #list[index] is the argument.
+    print_list(list, index+1) #recursive call
+print_list(cities, 0)
+print_list(heroes, 0) #heroes is the argument.  
+    
+    #call stack
 # A call stack is a data structure that stores information about the active subroutines of a computer program. 
