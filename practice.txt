@@ -1,0 +1,4 @@
+Hello World 
+ we are the champions 
+ learning file i/o in python 
+ I like learning new things in python

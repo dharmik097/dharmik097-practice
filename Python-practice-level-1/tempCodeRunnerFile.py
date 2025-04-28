@@ -1,5 +1,11 @@
-f = open("README.md", "r") #open the file in read mode.
-line1 = f.readline() #read the file.
-print(line1) #print the file.
-print(type(line1))
-f.close() #close the file.  
+
+def search_word_in_file():
+    word = input("Enter the word to search: ") #take input from user.
+    with open("practice.txt", "r") as f:
+       data = f.read()
+       if(data.find(word)) != -1:
+           print("word found")
+       else:
+           print("word not found")
+
+search_word_in_file()
