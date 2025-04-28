@@ -73,3 +73,34 @@ def search_word_in_file():
 search_word_in_file() #call the function.        
 
 # WAF to find in which line of the file does the word "learning" occur first time. print-1f the word is not found in the file.
+def check_for_line():
+    word = input("Enter the word to search: ") #take input from user.
+    with open("practice.txt", "r") as f:
+        lines = f.readlines() #read the lines of the file.
+        for i in range(len(lines)):
+            if lines[i].find(word) != -1: #check if the word is in the line.
+                print("word found in line number: ", i+1) #print the line number.
+                return #return if the word is found.
+        else:
+            print("word not found") #print if the word is not found.
+            
+
+check_for_line() #call the function.
+
+
+# other meathod. 
+
+def check_for_line():
+    word = input("Enter the word to search: ") #take input from user.
+    data = True
+    line_no = 1
+    with open("practice.txt", "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print("word found in line number: ", line_no)
+                return #return if the word is found. if return is not used, it will print the line number of all occurences of the word.
+            line_no += 1
+    return -1 #return if the word is not found.            
+
+check_for_line()
