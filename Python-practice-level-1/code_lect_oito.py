@@ -49,6 +49,7 @@ print(s2.name, s2.age) # Output: Vikrant Patel 22
 
 class Student:
     school = "ABC School" # class attribute
+    name = "anonymus" # class attribute 
 
     def __init__(self, name, age): # constructor
         self.name = name # instance attribute
@@ -57,7 +58,36 @@ class Student:
 
 
 s1 = Student("Arjun patel", 20) # object creation
-s2 = Student("Vikrant Patel", 22) # object creation
+s2 = Student("Vikrant Patel", 22) # object attribute > class attribute
 print(s1.name, s1.age, s1.school) # Output: Arjun patel 20 ABC School               
-print(s2.name, s2.age, s2.school) # Output: Vikrant Patel 22 ABC School
+print(s2.name, s2.age, s2.school) # Output: Vikrant Patel 22 ABC School  
 
+#Meathods
+# Methods are functions that belong to objects. They are defined inside a class and can access the attributes of the class using the self keyword.
+# Methods are used to perform operations on the attributes of the class.                    
+
+class Student:
+    def welcome(self):
+        print("Welcome to the class!")
+
+s1 = Student() # object creation
+s1.welcome() # Output: Welcome to the class!
+
+
+##Practice
+# Create student class that takes name & marks fo 3 subjects as arguments in constructor.Then create a method to print the average of the marks.
+
+
+class Student:
+    def __init__(self, name, marks1, marks2, marks3):       
+        self.name = name
+        self.marks1 = marks1
+        self.marks2 = marks2
+        self.marks3 = marks3
+    def calculate_average(self):
+        return (self.marks1 + self.marks2 + self.marks3) / 3
+
+s1 = Student("Arjun", 99, 98, 100)
+print(s1.name, s1.marks1, s1.marks2, s1.marks3)
+print("Average Marks:", s1.calculate_average())
+# Output: Average Marks: 98.66666666666667
