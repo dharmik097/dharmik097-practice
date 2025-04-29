@@ -133,4 +133,6 @@ def chek_odd_or_evn():
                 count += 1  # increment the count for even numbers
         except ValueError:
             print(f"Skipping invalid number: {val.strip()}")  # handle non-numeric values gracefully
-    print("Count of even numbers:", count)  # print the count of even numbers
+    print("Count of even numbers:", count)  # print the count of even numbers 
+
+    
