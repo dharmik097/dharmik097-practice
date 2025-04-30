@@ -1,13 +1,22 @@
-class Student:
-    def __init__(self, name, marks1, marks2, marks3):       
-        self.name = name
-        self.marks1 = marks1
-        self.marks2 = marks2
-        self.marks3 = marks3
-    def calculate_average(self):
-        return (self.marks1 + self.marks2 + self.marks3) / 3
 
-s1 = Student("Arjun", 99, 98, 100)
-print(s1.name, s1.marks1, s1.marks2, s1.marks3)
-print("Average Marks:", s1.calculate_average())
-# Output: Average Marks: 98.66666666666667
+class Account: 
+    def __init__(self, acc, bal):
+        self.account_no = acc 
+        self.balance = bal
+    #debit method
+    def debit(self, amount):
+        self.balance -= amount
+        print(f"Debited {amount}. New balance: {self.balance}")
+    #credit method
+    def credit(self, amount):
+        self.balance += amount
+        print(f"Credited {amount}. New balance: {self.balance}")    
+
+    #print balance method
+    def print_balance(self):
+        print(f"Account No: {self.account_no}, Balance: {self.balance}")    
+
+acc1 = Account("123456789", 1000) # object creation
+acc1.debit(200) # Output: Debited 200. New balance: 800
+acc1.credit(500) # Output: Credited 500. New balance: 1300
+acc1.print_balance() # Output: Account No: 123456789, Balance: 1300
