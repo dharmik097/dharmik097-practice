@@ -1,22 +1,16 @@
+class Student:
+    def __init__(self, phy, chem, math): # constructor
+        self.phy = phy # private instance variable
+        self.chem = chem
+        self.math = math        
 
-class Car:
-    @staticmethod
-    def start():
-        print("car started!")
-
-    @staticmethod
-    def stop():
-        print("car stopped!")
-
-class ToyotaCar(Car): # child class
-    def __init__(self, name):
-        self.name = name
-
-car1 = ToyotaCar("Fortuner") # object creation
-car2 = ToyotaCar("Innova")  # object creation
-
-print(car1.name) # Output: Fortuner
-print(car2.name) # Output: Innova
-
-print(car1.start()) # Output: car started!
-print(car2.stop()) # Output: car stopped!
+    @property
+    def percentage(self): # property method
+        return str((self.phy + self.chem + self.math) / 3) + "%"
+    
+St1 = Student(90, 80, 70) # object creation
+print(St1.percentage) # Output: 80.0%
+         
+#change any marks
+St1.phy = 100 # change phy marks
+print(St1.percentage) # Output: 83.33%

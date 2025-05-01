@@ -132,10 +132,58 @@ s1.welcome() # Output: Welcome to the class!
 s2.welcome() # Output: Welcome to the class!
 #here we have created a static method called welcome, which can be called without creating an object of the class.
 # Static methods are used for utility functions that do not require access to the instance or class variables. They are defined using the @staticmethod decorator.      
-
+# -------------
 
      
-
-
 #Important Note:
 # Abstraction is the process of hiding the implementation details and showing only the essential features of the object.
+# It helps to reduce complexity and increase efficiency. In Python, abstraction can be achieved using abstract classes and interfaces.
+# An abstract class is a class that cannot be instantiated and can contain abstract methods (methods without implementation) and concrete methods (methods with implementation).        
+
+class Car:
+    def __init__(self):
+        self.acc =  False
+        self.brl = False
+        self.clutch = False
+
+    def start(self):
+        self.acc = True
+        self.clutch = True
+        print("Car started")
+
+car1 = Car()
+car1.start() # Output: Car started       
+
+
+#Encapsulation
+# Encapsulation is the process of wrapping data and methods into a single unit (class). It restricts direct access to some of the object's components and can prevent the accidental modification of data. In Python, encapsulation can be achieved using private and public access modifiers.
+# Private members are not accessible from outside the class, while public members are accessible from outside the class.
+# Private members are defined using a single underscore (_) or double underscore (__). Public members are defined without any underscore.
+
+
+# Practice...
+# create account class with 2 attributes: balance & account no.
+# create methods for debit, credit, and printing the balance.
+
+
+class Account: 
+    def __init__(self, acc, bal):
+        self.account_no = acc 
+        self.balance = bal
+    #debit method
+    def debit(self, amount):
+        self.balance -= amount
+        print(f"Debited {amount}. New balance: {self.balance}")
+    #credit method
+    def credit(self, amount):
+        self.balance += amount
+        print(f"Credited {amount}. New balance: {self.balance}")    
+
+    #print balance method
+    def print_balance(self):
+        print(f"Account No: {self.account_no}, Balance: {self.balance}")    
+
+acc1 = Account("123456789", 1000) # object creation
+acc1.debit(200) # Output: Debited 200. New balance: 800
+acc1.credit(500) # Output: Credited 500. New balance: 1300
+acc1.print_balance() # Output: Account No: 123456789, Balance: 1300
