@@ -1,16 +1,14 @@
-class Student:
-    def __init__(self, phy, chem, math): # constructor
-        self.phy = phy # private instance variable
-        self.chem = chem
-        self.math = math        
 
-    @property
-    def percentage(self): # property method
-        return str((self.phy + self.chem + self.math) / 3) + "%"
+class Order:
+    def __init__(self, item, price): # constructor
+        self.item = item # instance variable
+        self.price = price # instance variable
     
-St1 = Student(90, 80, 70) # object creation
-print(St1.percentage) # Output: 80.0%
-         
-#change any marks
-St1.phy = 100 # change phy marks
-print(St1.percentage) # Output: 83.33%
+    def __gt__(self, order2):
+        return self.price > order2.price
+
+order1 = Order("Laptop", 50000) # object creation
+order2 = Order("Mobile", 30000) # object creation
+
+print(order1 > order2) # Output: True
+print(order2 > order1) # Output: False
