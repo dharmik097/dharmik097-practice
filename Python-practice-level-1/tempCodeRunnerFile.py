@@ -3,6 +3,10 @@ import random
 target = random.randint(1, 100) # target number
 
 while True: 
+    userChoice = input("Guess the target or Quit(Q):")
+    if(userChoice == 'Q' or userChoice == 'q'):
+        print("You quit the game.")
+        break
     userChoice = int(input("Guess the number between 1 and 100: ")) # user input
     if(userChoice == target) : # check if user guess is less than target
         print("Congratulations! You guessed the number.")
